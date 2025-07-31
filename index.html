@@ -1,24 +1,179 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Intro 3 (3º SEC): Tu Primera Creación con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Intro 3: Tu Primera Creación con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo y Conexión ⏰ 3 minutos</h2>
+                <p>Iniciar la sesión con el "handshake" digital y contextualizar la primera misión de co-creación con IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 3 minutos</h3>
+                            <p>El facilitador conecta las sesiones de onboarding y presenta el objetivo: la primera colaboración de Vibe Coding Avanzado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Desarrolladores, ya conocemos nuestra misión y hemos configurado nuestro pipeline de herramientas. Hoy, todo se une. Experimentarán por primera vez el 'Vibe Coding Avanzado'. No solo pedirán código, sino que colaborarán con Xolo para generarlo, lo analizarán como ingenieros, y lo depurarán como solucionadores de problemas. Comencemos con nuestro 'handshake' profesional a Xolo para iniciar la sesión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Demostración ⏰ 7 minutos</h2>
+                <p>Clarificar el objetivo de aprendizaje y mostrar un ejemplo del producto final para establecer una meta tangible.</p>
+                 <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>El facilitador define el objetivo de aprendizaje concreto para la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Nuestra meta hoy es muy específica. Al final de la sesión, podrán afirmar con seguridad: <strong>'Yo puedo utilizar Vibe Coding para generar, analizar y depurar un script simple de MicroPython para controlar una salida en mi Micro:bit/IOTbit.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Demostración del Objetivo Final ⏰ 4 minutos</h3>
+                            <p>El facilitador muestra un Micro:bit con la IOTbit corriendo el programa de un LED parpadeante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Esto es lo que construiremos hoy. (Muestra el hardware funcionando). Un programa simple, pero creado con un flujo de trabajo profesional. El código que hace esto no fue escrito línea por línea; fue generado a partir de una instrucción en lenguaje natural, fue analizado para entender su lógica, y fue implementado y probado. Este proceso es nuestro objetivo de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Análisis y Contextualización) ⏰ 10 minutos</h2>
+                <p>Fase de aprendizaje conceptual individual con Xolo para entender la transición a la programación textual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: De Bloques a Texto ⏰ 10 minutos</h3>
+                            <p>Los estudiantes interactúan con Xolo para entender los conceptos clave de Python que se usarán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. De forma individual, su misión es construir el andamiaje teórico. Abran su chat con Xolo y pídanle: <strong>'Xolo, voy a pasar de bloques a MicroPython. Explícame estos tres conceptos cruciales: 1) qué es la indentación y por qué es importante, 2) qué hace el comando `import`, y 3) cómo funciona un bucle `while True`.'</strong> Tómense el tiempo para dialogar con él y aclarar cualquier duda. Es la base para poder 'domar' el código que genere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Brain Spark (Flujo de Creación Aumentada) ⏰ 15 minutos</h2>
+                <p>El corazón de la sesión: los estudiantes aplican la metodología de 5 fases en parejas para co-crear su primer script.</p>
+                 <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: VIBE CODING (Diseño y Generación) ⏰ 5 minutos</h3>
+                            <p>Las parejas definen su "vibe" y Xolo genera el código Python.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Formen parejas. Su primera tarea es diseñar la 'vibe' de su programa. Definan una instrucción clara y concisa en lenguaje natural. Por ejemplo: <strong>'Xolo, genera un script de MicroPython que haga parpadear el LED rojo de la IOTbit cada segundo, indefinidamente.'</strong>. Un miembro del equipo se encarga de la comunicación con Xolo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ANÁLISIS DE CÓDIGO (Taming the Genie) ⏰ 5 minutos</h3>
+                            <p>Las parejas leen, analizan y comprenden el código generado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Una vez que tengan el código, no lo copien. Su trabajo como ingenieros es **leerlo y entenderlo**. Juntos, identifiquen las partes que Xolo les explicó en el A.I. GYM: el `import`, el bucle, las funciones que encienden y apagan el LED. Traduzcan cada línea a lenguaje natural. Si una parte no queda clara, pregunten a Xolo: **'Xolo, en este código, ¿qué hace específicamente la línea `iotit.set_led_color(0xFF0000)`?'**</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: IMPLEMENTACIÓN Y DEBUGGING ⏰ 5 minutos</h3>
+                            <p>Las parejas implementan el código y colaboran con Xolo para depurarlo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora sí, implementen. Copien el código a MakeCode, conéctense al Micro:bit y descárguenlo. Si funciona, excelente. Si no, han encontrado su primer 'bug'. Su trabajo es describir el error o el comportamiento inesperado a Xolo de forma precisa. Peguen su código y el mensaje de error. Por ejemplo: **'Xolo, el LED no parpadea, solo se queda encendido. Este es nuestro código. ¿Qué área deberíamos revisar?'**</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión y Siguiente Iteración) ⏰ 5 minutos</h2>
+                <p>Cierre de la sesión donde los equipos comparten sus 'insights' de ingeniería y reflexionan sobre el proceso de co-creación.</p>
+                <div class="steps">
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Showcase y Reflexión de Procesos ⏰ 5 minutos</h3>
+                            <p>El facilitador invita a 2-3 equipos a compartir un 'insight' de su proceso de análisis o depuración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Tiempo. Excelente trabajo, ingenieros. Para nuestro Gnius STORM, quiero que algunos equipos compartan, no solo su resultado, sino un 'insight' del proceso. ¿Hubo alguna línea de código que les costó entender al principio? ¿Qué aprendieron durante la depuración? ¿Cómo fue la experiencia de 'domar' el código generado por Xolo? (Gestiona las presentaciones). Hoy han dado su primer paso como desarrolladores que colaboran con IA, un flujo de trabajo que define la ingeniería de software moderna. Felicitaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
